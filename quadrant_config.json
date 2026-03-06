@@ -1,0 +1,96 @@
+{
+  "excel_filename": null,
+  "sheet_name": "Roadmap",
+  "views": [
+    {
+      "name": "KPI Quadrant",
+      "description": "Project Health vs Delivery Performance based on 6 KPIs",
+      "enabled": true,
+      "project_name_column": "E",
+      "phase_column": "T",
+      "phase_value": "5 Réalisation",
+      "kpi_columns": {
+        "CS": "Launch Indicator",
+        "DA": "Planning",
+        "DD": "Budget",
+        "DF": "Scope",
+        "DH": "Risk",
+        "DJ": "Change"
+      },
+      "x_axis": {
+        "label": "Delivery Performance",
+        "kpis": ["DA", "DD", "DF"]
+      },
+      "y_axis": {
+        "label": "Project Health / Risk",
+        "kpis": ["CS", "DH", "DJ"]
+      },
+      "scoring_map": {
+        "J": 3,
+        "K": 2,
+        "L": 1
+      },
+      "default_score": 1,
+      "quadrant_thresholds": {
+        "x": 2,
+        "y": 2
+      },
+      "quadrant_labels": {
+        "top_right": "On Track",
+        "top_left": "Delivery Issues",
+        "bottom_right": "Health Concerns",
+        "bottom_left": "Critical"
+      },
+      "color_thresholds": {
+        "green": 2.5,
+        "orange_min": 1.75
+      }
+    },
+    {
+      "name": "Value Quadrant",
+      "description": "Strategic Value vs Effort (stub for future implementation)",
+      "enabled": false,
+      "project_name_column": "E",
+      "phase_column": "T",
+      "phase_value": "5 Réalisation",
+      "kpi_columns": {},
+      "x_axis": {
+        "label": "Effort",
+        "kpis": []
+      },
+      "y_axis": {
+        "label": "Strategic Value",
+        "kpis": []
+      },
+      "scoring_map": {
+        "J": 3,
+        "K": 2,
+        "L": 1
+      },
+      "default_score": 1
+    },
+    {
+      "name": "Risk Quadrant",
+      "description": "Risk Impact vs Probability (stub for future implementation)",
+      "enabled": false,
+      "project_name_column": "E",
+      "phase_column": "T",
+      "phase_value": "5 Réalisation",
+      "kpi_columns": {},
+      "x_axis": {
+        "label": "Risk Probability",
+        "kpis": []
+      },
+      "y_axis": {
+        "label": "Risk Impact",
+        "kpis": []
+      },
+      "scoring_map": {
+        "J": 3,
+        "K": 2,
+        "L": 1
+      },
+      "default_score": 1
+    }
+  ]
+}
